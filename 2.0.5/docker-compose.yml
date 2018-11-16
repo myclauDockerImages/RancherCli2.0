@@ -1,0 +1,9 @@
+version: '2'
+services:
+  ranchercli:
+    image: "myclau/ranchercli2:2.0.5"
+    environment:
+      RANCHER_TOKEN: XXX:XXX
+      RANCHER_URL: https://XXX/v3
+      RANCHER_CA_CERT: xxxx
+      DEFAULT_PROJECT: 1

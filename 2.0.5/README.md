@@ -1,9 +1,15 @@
 # RancherCli2.0
-allow you to easy use RancherCli for rancher2.x with docker exec
+allow you to easy use RancherCli for rancher2.x with docker exec, add kubectl support(update)
 
 # Environment Variable
-1. `RANCHER_TOKEN` value schema: `ACCESS-KEY:SECRET-KEY` Default: `null`
-2. `RANCHER_URL` value schema: `http(s)://xxx.com/v3` Default: `null`
+1. `RANCHER_TOKEN` value schema: `ACCESS-KEY:SECRET-KEY` Default: `null` 
+  ```
+  !!!Cannot empty!!!
+  ```
+2. `RANCHER_URL` value schema: `http(s)://xxx.com/v3` Default: `null` 
+  ```
+  !!!Cannot empty!!!
+  ```
 3. `RANCHER_CA_CERT`
    1. assume you have a cacert file:
      ```
@@ -43,6 +49,11 @@ allow you to easy use RancherCli for rancher2.x with docker exec
         3         cluster-1      c-lchzv:p-xbpdt         project-1
         4         cluster-1      c-lchzv:project-s2mch   Default
         ```
+5. `RANCHER_DEFAULT_CLUSTER` 
+   1. Default is `null`
+   2. If you input the cluster let said `local`
+   3. once you start or restart the container it will generate the kubeconfig in to default kubeconfig location `~/.kube/config`
+   4. then you can directly use kubectl command i.e `kubectl get nodes`
 
 # How to use
 1. after you set docker-compose.yml / docker command with environment

@@ -8,3 +8,4 @@ services:
       RANCHER_URL: https://XXX/v3
       RANCHER_CA_CERT: xxxx
       DEFAULT_PROJECT: 1
+      RANCHER_DEFAULT_CLUSTER: local

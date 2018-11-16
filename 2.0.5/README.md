@@ -1,5 +1,5 @@
 # RancherCli2.0
-allow you to easy use RancherCli for rancher2.x with docker exec, add kubectl support(update)
+allow you to easy use RancherCli for rancher2.x with docker exec, add kubectl available and auto generate kubeconfig but make sure your token have right(update)
 
 # Environment Variable
 1. `RANCHER_TOKEN` value schema: `ACCESS-KEY:SECRET-KEY` Default: `null` 

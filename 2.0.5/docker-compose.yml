@@ -1,6 +1,7 @@
 version: '2'
 services:
   ranchercli:
+    container_name: ranchercli
     image: "myclau/ranchercli2:2.0.5"
     environment:
       RANCHER_TOKEN: XXX:XXX

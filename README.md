@@ -48,5 +48,5 @@ allow you to easy use RancherCli for rancher2.x with docker exec
 1. after you set docker-compose.yml / docker command with environment
 2. run `docker-compose up -d` 
 3. or `docker run --name ranchercli  -e .... myclau/ranchercli2:2.0.5`
-4. run `docker exec -it ranchercli bash`
-5. you can use command `ranchercli` directly it the session.
+4. run `docker exec -it ranchercli bash` `docker exec -it ranchercli rancher ...`
+5. you can use command `rancher` directly it the session.

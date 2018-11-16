@@ -1,7 +1,7 @@
 # RancherCli2.0
 allow you to easy use RancherCli for rancher2.x with docker exec
 
-#Environment Variable
+# Environment Variable
 1. `RANCHER_TOKEN` value schema: `ACCESS-KEY:SECRET-KEY` Default: `null`
 2. `RANCHER_URL` value schema: `http(s)://xxx.com/v3` Default: `null`
 3. `RANCHER_CA_CERT`
@@ -44,7 +44,7 @@ allow you to easy use RancherCli for rancher2.x with docker exec
         4         cluster-1      c-lchzv:project-s2mch   Default
         ```
 
-#How to use
+# How to use
 1. after you set docker-compose.yml / docker command with environment
 2. run `docker-compose up -d` 
 3. or `docker run --name ranchercli  -e .... myclau/ranchercli2:2.0.5`
